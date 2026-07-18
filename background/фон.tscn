@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://b57bbdtjtiing"]
+
+[ext_resource type="Texture2D" uid="uid://beuisyvbu78d6" path="res://assets/images.jpg" id="1_rbuj4"]
+
+[node name="фон" type="Node2D" unique_id=1267698269]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=125874995]
+position = Vector2(131, 120.5)
+scale = Vector2(0.415625, 0.49791667)
+texture = ExtResource("1_rbuj4")

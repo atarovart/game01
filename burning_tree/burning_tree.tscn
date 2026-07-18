@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://ccbcnmbi3wuj4"]
+
+[ext_resource type="Texture2D" uid="uid://by07gw0jod0h2" path="res://assets/pngtree-pine-tree-with-gradation-color-icon-pixel-art-png-image_6173919.png" id="1_awk1o"]
+[ext_resource type="Script" uid="uid://cxgpj3pb8r4vh" path="res://burning_tree/sprite_2d.gd" id="2_dwa4c"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2hx68"]
+radius = 11.0
+height = 92.0
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4nu2b"]
+radius = 14.903488
+height = 40.058105
+
+[node name="burning tree" type="Node2D" unique_id=2109541307]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=194783571]
+texture_filter = 3
+position = Vector2(125, 155)
+scale = Vector2(0.28472203, 0.3125001)
+texture = ExtResource("1_awk1o")
+script = ExtResource("2_dwa4c")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=559134752]
+position = Vector2(126, 155)
+shape = SubResource("CapsuleShape2D_2hx68")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=39500346]
+position = Vector2(127, 162.00002)
+rotation = 1.5550259
+shape = SubResource("CapsuleShape2D_4nu2b")

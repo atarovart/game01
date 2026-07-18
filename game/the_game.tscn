@@ -1,0 +1,50 @@
+[gd_scene format=3 uid="uid://htd6u4fjdst7"]
+
+[ext_resource type="PackedScene" uid="uid://b57bbdtjtiing" path="res://background/фон.tscn" id="1_p4rc1"]
+[ext_resource type="PackedScene" uid="uid://bq0060nqmcxw3" path="res://character/character_body_2d.tscn" id="2_5fi40"]
+[ext_resource type="PackedScene" uid="uid://ccbcnmbi3wuj4" path="res://burning_tree/burning_tree.tscn" id="3_iste3"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ctgys"]
+size = Vector2(20, 247)
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_5fi40"]
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_iste3"]
+normal = Vector2(0, 1)
+distance = -43.0
+
+[sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_fuavk"]
+normal = Vector2(-1, 0)
+distance = -259.0
+
+[node name="TheGame" type="Node2D" unique_id=1384663195]
+
+[node name="фон" parent="." unique_id=1267698269 instance=ExtResource("1_p4rc1")]
+
+[node name="burning tree" parent="." unique_id=2109541307 instance=ExtResource("3_iste3")]
+position = Vector2(67, 4.0000153)
+
+[node name="CharacterBody2D" parent="." unique_id=1033023636 instance=ExtResource("2_5fi40")]
+position = Vector2(112, 163)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1025499703]
+position = Vector2(-5, 118)
+shape = SubResource("RectangleShape2D_ctgys")
+one_way_collision_direction = Vector2(0.9998715, 0.016031696)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionShape2D" unique_id=1105367608]
+position = Vector2(270, 2)
+shape = SubResource("RectangleShape2D_ctgys")
+one_way_collision_direction = Vector2(0.9998715, 0.016031696)
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=1583456647]
+position = Vector2(128, 238)
+shape = SubResource("WorldBoundaryShape2D_5fi40")
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="." unique_id=1514136724]
+position = Vector2(135, 44)
+shape = SubResource("WorldBoundaryShape2D_iste3")
+
+[node name="CollisionShape2D4" type="CollisionShape2D" parent="." unique_id=253971629]
+position = Vector2(4, 127)
+shape = SubResource("WorldBoundaryShape2D_fuavk")
