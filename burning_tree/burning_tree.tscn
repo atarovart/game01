@@ -1,30 +1,39 @@
 [gd_scene format=3 uid="uid://ccbcnmbi3wuj4"]
 
 [ext_resource type="Texture2D" uid="uid://by07gw0jod0h2" path="res://assets/pngtree-pine-tree-with-gradation-color-icon-pixel-art-png-image_6173919.png" id="1_awk1o"]
-[ext_resource type="Script" uid="uid://cxgpj3pb8r4vh" path="res://burning_tree/sprite_2d.gd" id="2_dwa4c"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_mm4tj"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2hx68"]
 radius = 11.0
-height = 92.0
+height = 80.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4nu2b"]
 radius = 14.903488
 height = 40.058105
 
 [node name="burning tree" type="Node2D" unique_id=2109541307]
+position = Vector2(11, -10)
 
-[node name="Sprite2D" type="Sprite2D" parent="." unique_id=194783571]
+[node name="Sprite2D" type="StaticBody2D" parent="." unique_id=1668812203]
 texture_filter = 3
 position = Vector2(125, 155)
 scale = Vector2(0.28472203, 0.3125001)
-texture = ExtResource("1_awk1o")
-script = ExtResource("2_dwa4c")
+physics_material_override = SubResource("PhysicsMaterial_mm4tj")
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=559134752]
-position = Vector2(126, 155)
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=559134752]
+position = Vector2(3.512207, 0)
+scale = Vector2(3.5121975, 3.199999)
 shape = SubResource("CapsuleShape2D_2hx68")
 
-[node name="CollisionShape2D2" type="CollisionShape2D" parent="." unique_id=39500346]
-position = Vector2(127, 162.00002)
-rotation = 1.5550259
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="Sprite2D" unique_id=39500346]
+position = Vector2(7.0243835, 22.400055)
+rotation = 1.5534877
+scale = Vector2(3.2000806, 3.5121233)
+skew = 0.0029398203
 shape = SubResource("CapsuleShape2D_4nu2b")
+
+[node name="Sprite2D2" type="Sprite2D" parent="Sprite2D" unique_id=818092743]
+position = Vector2(7.0243955, 3.2000222)
+scale = Vector2(0.8829276, 1.0044441)
+texture = ExtResource("1_awk1o")
