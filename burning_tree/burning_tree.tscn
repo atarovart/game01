@@ -6,7 +6,7 @@
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_2hx68"]
 radius = 11.0
-height = 80.0
+height = 84.0
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_4nu2b"]
 radius = 14.903488
@@ -22,7 +22,7 @@ scale = Vector2(0.28472203, 0.3125001)
 physics_material_override = SubResource("PhysicsMaterial_mm4tj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=559134752]
-position = Vector2(3.512207, 0)
+position = Vector2(7.0244045, -22.399994)
 scale = Vector2(3.5121975, 3.199999)
 shape = SubResource("CapsuleShape2D_2hx68")
 

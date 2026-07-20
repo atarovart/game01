@@ -1,0 +1,73 @@
+[gd_scene format=3 uid="uid://benc37sap5p8u"]
+
+[ext_resource type="Script" uid="uid://crp2p6eo65y7t" path="res://character_body_2d.gd" id="1_kkk2b"]
+[ext_resource type="Texture2D" uid="uid://bl1htq8ntq30i" path="res://assets/bird_pixel.png" id="2_kkk2b"]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_pykjf"]
+radius = 109.52068
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6c7e3"]
+atlas = ExtResource("2_kkk2b")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="Animation" id="Animation_ctgys"]
+resource_name = "Idle"
+length = 0.33333334
+loop_mode = 1
+step = 0.06666667
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture:region")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.06666667, 0.2, 0.33333334),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 1,
+"values": [Rect2(71, 466, 170, 82), Rect2(289, 465, 163, 82), Rect2(498, 396, 168, 152), Rect2(699, 469, 201, 79)]
+}
+
+[sub_resource type="Animation" id="Animation_q5p83"]
+length = 0.14285715
+step = 0.14285715
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:texture:region")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Rect2(0, 0, 32, 32)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_uuu8k"]
+_data = {
+&"Idle": SubResource("Animation_ctgys"),
+&"RESET": SubResource("Animation_q5p83")
+}
+
+[node name="CharacterBody2D" type="CharacterBody2D" unique_id=757878793]
+script = ExtResource("1_kkk2b")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=626029248]
+position = Vector2(-3.923722, -0.77743477)
+rotation = -1.8212599
+scale = Vector2(0.16286546, 0.14289948)
+skew = -0.0863421
+shape = SubResource("CircleShape2D_pykjf")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1188209833]
+texture_filter = 3
+position = Vector2(-4.416176, 0.7305691)
+scale = Vector2(0.18333907, 0.20169345)
+texture = SubResource("AtlasTexture_6c7e3")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1442751734]
+process_mode = 3
+libraries/ = SubResource("AnimationLibrary_uuu8k")
+autoplay = &"Idle"
+speed_scale = 0.922
