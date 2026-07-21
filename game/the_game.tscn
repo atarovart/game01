@@ -13,11 +13,33 @@
 [node name="burning tree" parent="." unique_id=2109541307 instance=ExtResource("3_iste3")]
 position = Vector2(67, 4.0000153)
 
-[node name="Character1" parent="." unique_id=1033023636 instance=ExtResource("2_5fi40")]
-position = Vector2(112, 163)
+[node name="MC bird" parent="." unique_id=1033023636 instance=ExtResource("2_5fi40")]
+top_level = true
+position = Vector2(54, 103.99999)
 input_pickable = true
 
 [node name="wall" parent="." unique_id=428414114 instance=ExtResource("4_5fi40")]
 
 [node name="Character2" parent="." unique_id=757878793 instance=ExtResource("5_iste3")]
-position = Vector2(91, 106)
+position = Vector2(228, 74)
+
+[node name="Character3" parent="." unique_id=257940448 instance=ExtResource("5_iste3")]
+position = Vector2(216, 105)
+
+[node name="Character4" parent="." unique_id=146292320 instance=ExtResource("5_iste3")]
+position = Vector2(212, 48)
+
+[node name="Character5" parent="." unique_id=1683310021 instance=ExtResource("5_iste3")]
+position = Vector2(242, 31)
+
+[node name="Character6" parent="." unique_id=1617459719 instance=ExtResource("5_iste3")]
+position = Vector2(230, 205)
+
+[node name="Character7" parent="." unique_id=1313194688 instance=ExtResource("5_iste3")]
+position = Vector2(162, 195)
+
+[node name="Character8" parent="." unique_id=282357859 instance=ExtResource("5_iste3")]
+position = Vector2(159, 28)
+
+[node name="Character9" parent="." unique_id=967554426 instance=ExtResource("5_iste3")]
+position = Vector2(178, 60)
