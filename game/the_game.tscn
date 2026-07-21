@@ -6,6 +6,7 @@
 [ext_resource type="PackedScene" uid="uid://c8hchlplns58j" path="res://collisions/wall.tscn" id="4_5fi40"]
 [ext_resource type="PackedScene" uid="uid://benc37sap5p8u" path="res://characters/character_body2_2d.tscn" id="5_iste3"]
 [ext_resource type="PackedScene" uid="uid://bs8wjg0k4h0iy" path="res://weapons/seed.tscn" id="6_fuavk"]
+[ext_resource type="PackedScene" uid="uid://jvlr4tqusxf8" path="res://restart/reload button.tscn" id="7_4w6ja"]
 
 [node name="TheGame" type="Node2D" unique_id=1384663195]
 
@@ -18,10 +19,11 @@ position = Vector2(67, 4.0000153)
 
 [node name="MC bird" parent="." unique_id=1033023636 instance=ExtResource("2_5fi40")]
 top_level = true
-position = Vector2(56, 110.99999)
+position = Vector2(79, 105)
 input_pickable = true
 
 [node name="seed" parent="." unique_id=424827213 instance=ExtResource("6_fuavk")]
+visible = false
 
 [node name="wall" parent="." unique_id=428414114 instance=ExtResource("4_5fi40")]
 position = Vector2(128, -6)
@@ -49,3 +51,6 @@ position = Vector2(159, 28)
 
 [node name="Character9" parent="." unique_id=967554426 instance=ExtResource("5_iste3")]
 position = Vector2(178, 60)
+
+[node name="CheckButton" parent="." unique_id=242510527 instance=ExtResource("7_4w6ja")]
+offset_right = 286.0

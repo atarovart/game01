@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://jvlr4tqusxf8"]
+
+[ext_resource type="Script" uid="uid://bocn282g2mdap" path="res://check_button.gd" id="1_3vd3l"]
+
+[node name="CheckButton" type="CheckButton" unique_id=242510527]
+show_behind_parent = true
+offset_left = -9.0
+offset_top = -11.0
+offset_right = 267.0
+offset_bottom = 249.0
+offset_transform_enabled = true
+offset_transform_scale = Vector2(0.4, 0.4)
+action_mode = 0
+button_mask = 2
+script = ExtResource("1_3vd3l")
