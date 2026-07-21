@@ -4,19 +4,20 @@
 [ext_resource type="Texture2D" uid="uid://cfyyevl1vdwwl" path="res://assets/seed.png" id="1_yhelr"]
 
 [sub_resource type="CapsuleShape2D" id="CapsuleShape2D_5kbsg"]
-radius = 3.9992218
+radius = 3.9992259
 height = 11.997681
 
 [node name="seed" type="CharacterBody2D" unique_id=424827213]
+top_level = true
 script = ExtResource("1_5kbsg")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1113535331]
-position = Vector2(93, 85)
+position = Vector2(-1.7763568e-15, 5.9604645e-08)
 rotation = -1.5904696
+scale = Vector2(0.99999994, 0.99999994)
 shape = SubResource("CapsuleShape2D_5kbsg")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=1212045384]
 texture_filter = 3
-position = Vector2(93, 86)
-scale = Vector2(0.375, 0.375)
+scale = Vector2(0.27499995, 0.27499995)
 texture = ExtResource("1_yhelr")

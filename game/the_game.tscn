@@ -1,24 +1,30 @@
 [gd_scene format=3 uid="uid://htd6u4fjdst7"]
 
 [ext_resource type="PackedScene" uid="uid://b57bbdtjtiing" path="res://background/фон.tscn" id="1_p4rc1"]
-[ext_resource type="PackedScene" uid="uid://bq0060nqmcxw3" path="res://character/character_body_2d.tscn" id="2_5fi40"]
+[ext_resource type="PackedScene" uid="uid://bq0060nqmcxw3" path="res://characters/character_body_2d.tscn" id="2_5fi40"]
 [ext_resource type="PackedScene" uid="uid://ccbcnmbi3wuj4" path="res://burning_tree/burning_tree.tscn" id="3_iste3"]
 [ext_resource type="PackedScene" uid="uid://c8hchlplns58j" path="res://collisions/wall.tscn" id="4_5fi40"]
-[ext_resource type="PackedScene" uid="uid://benc37sap5p8u" path="res://character/character_body2_2d.tscn" id="5_iste3"]
+[ext_resource type="PackedScene" uid="uid://benc37sap5p8u" path="res://characters/character_body2_2d.tscn" id="5_iste3"]
+[ext_resource type="PackedScene" uid="uid://bs8wjg0k4h0iy" path="res://weapons/seed.tscn" id="6_fuavk"]
 
 [node name="TheGame" type="Node2D" unique_id=1384663195]
 
 [node name="фон" parent="." unique_id=1267698269 instance=ExtResource("1_p4rc1")]
+position = Vector2(0, -5)
+scale = Vector2(1.03, 1.03)
 
 [node name="burning tree" parent="." unique_id=2109541307 instance=ExtResource("3_iste3")]
 position = Vector2(67, 4.0000153)
 
 [node name="MC bird" parent="." unique_id=1033023636 instance=ExtResource("2_5fi40")]
 top_level = true
-position = Vector2(54, 103.99999)
+position = Vector2(56, 110.99999)
 input_pickable = true
 
+[node name="seed" parent="." unique_id=424827213 instance=ExtResource("6_fuavk")]
+
 [node name="wall" parent="." unique_id=428414114 instance=ExtResource("4_5fi40")]
+position = Vector2(128, -6)
 
 [node name="Character2" parent="." unique_id=757878793 instance=ExtResource("5_iste3")]
 position = Vector2(228, 74)

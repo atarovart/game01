@@ -1,8 +1,8 @@
 [gd_scene format=3 uid="uid://bq0060nqmcxw3"]
 
-[ext_resource type="Script" uid="uid://ceay3marqmo0" path="res://character/character_body_2d.gd" id="1_ctgys"]
+[ext_resource type="Script" uid="uid://ceay3marqmo0" path="res://characters/character_body_2d.gd" id="1_ctgys"]
 [ext_resource type="Texture2D" uid="uid://cxwlrtjn28gt4" path="res://assets/upgraded_bird (2).png" id="2_ctgys"]
-[ext_resource type="PackedScene" uid="uid://bs8wjg0k4h0iy" path="res://weapons/seed.tscn" id="3_q5p83"]
+[ext_resource type="PackedScene" uid="uid://bs8wjg0k4h0iy" path="res://weapons/seed.tscn" id="3_cx7pn"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_2hx68"]
 radius = 109.52068
@@ -70,7 +70,6 @@ _data = {
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=652265518]
 rotation = -0.19560365
-disable_mode = 2
 motion_mode = 1
 script = ExtResource("1_ctgys")
 
@@ -93,5 +92,4 @@ libraries/ = SubResource("AnimationLibrary_q5p83")
 autoplay = &"RESET"
 speed_scale = 0.922
 
-[node name="seed" parent="." unique_id=424827213 instance=ExtResource("3_q5p83")]
-top_level = true
+[node name="seed" parent="." unique_id=424827213 instance=ExtResource("3_cx7pn")]

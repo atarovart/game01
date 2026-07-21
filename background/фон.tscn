@@ -5,6 +5,7 @@
 [node name="фон" type="Node2D" unique_id=1267698269]
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=125874995]
+show_behind_parent = true
 position = Vector2(131, 120.5)
 scale = Vector2(0.415625, 0.49791667)
 texture = ExtResource("1_rbuj4")

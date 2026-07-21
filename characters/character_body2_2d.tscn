@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://benc37sap5p8u"]
 
+[ext_resource type="Script" uid="uid://c6trwb1qgxe6k" path="res://characters/character_body_2_2d.gd" id="1_08nbk"]
 [ext_resource type="Texture2D" uid="uid://bl1htq8ntq30i" path="res://assets/bird_pixel.png" id="2_kkk2b"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_pykjf"]
@@ -51,6 +52,7 @@ _data = {
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=757878793]
+script = ExtResource("1_08nbk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=626029248]
 position = Vector2(-3.923722, -0.77743477)
