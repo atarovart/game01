@@ -22,10 +22,10 @@ tracks/0/path = NodePath("Enemy bird:texture:region")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.14285715, 0.2857143, 0.42857146, 0.5714286, 0.71428573, 0.8571429, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
+"times": PackedFloat32Array(0, 0.14285715, 0.2857143, 0.42857146, 0.5714286),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 1,
-"values": [Rect2(71, 466, 170, 82), Rect2(289, 465, 163, 82), Rect2(498, 396, 168, 152), Rect2(699, 469, 201, 79), Rect2(954, 345, 249, 137), Rect2(26, 708, 260, 96), Rect2(658, 310, 241, 133), Rect2(349, 237, 246, 202)]
+"values": [Rect2(71, 466, 170, 82), Rect2(289, 465, 163, 82), Rect2(498, 396, 168, 152), Rect2(699, 469, 201, 79), Rect2(954, 345, 249, 137)]
 }
 
 [sub_resource type="Animation" id="Animation_q5p83"]
@@ -52,6 +52,7 @@ _data = {
 }
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=757878793]
+collision_layer = 2
 script = ExtResource("1_08nbk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=626029248]
@@ -68,9 +69,7 @@ scale = Vector2(0.18333907, 0.20169345)
 texture = SubResource("AtlasTexture_6c7e3")
 flip_h = true
 
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Enemy bird" unique_id=1442751734]
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1442751734]
 process_mode = 3
-root_node = NodePath("../..")
+callback_mode_process = 0
 libraries/ = SubResource("AnimationLibrary_uuu8k")
-autoplay = &"RESET"
-speed_scale = 0.922

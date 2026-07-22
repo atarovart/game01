@@ -1,5 +1,6 @@
 [gd_scene format=3 uid="uid://htd6u4fjdst7"]
 
+[ext_resource type="PackedScene" uid="uid://cx2x00fids2wi" path="res://EnemySpawner/enemy_spawner.tscn" id="1_7ho5o"]
 [ext_resource type="PackedScene" uid="uid://b57bbdtjtiing" path="res://background/фон.tscn" id="1_p4rc1"]
 [ext_resource type="PackedScene" uid="uid://bq0060nqmcxw3" path="res://characters/character_body_2d.tscn" id="2_5fi40"]
 [ext_resource type="PackedScene" uid="uid://ccbcnmbi3wuj4" path="res://burning_tree/burning_tree.tscn" id="3_iste3"]
@@ -9,6 +10,8 @@
 [ext_resource type="PackedScene" uid="uid://jvlr4tqusxf8" path="res://restart/reload button.tscn" id="7_4w6ja"]
 
 [node name="TheGame" type="Node2D" unique_id=1384663195]
+
+[node name="EnemySpawner" parent="." unique_id=366712927 instance=ExtResource("1_7ho5o")]
 
 [node name="фон" parent="." unique_id=1267698269 instance=ExtResource("1_p4rc1")]
 position = Vector2(0, -5)

@@ -70,6 +70,7 @@ _data = {
 
 [node name="CharacterBody2D" type="CharacterBody2D" unique_id=652265518]
 rotation = -0.19560365
+collision_layer = 2
 motion_mode = 1
 script = ExtResource("1_ctgys")
 

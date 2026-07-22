@@ -19,6 +19,7 @@ position = Vector2(11, -10)
 texture_filter = 3
 position = Vector2(125, 155)
 scale = Vector2(0.28472203, 0.3125001)
+collision_mask = 6
 physics_material_override = SubResource("PhysicsMaterial_mm4tj")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Sprite2D" unique_id=559134752]
